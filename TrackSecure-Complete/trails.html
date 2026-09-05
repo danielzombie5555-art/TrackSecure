@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Explore Trails | TrackSecure</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="topbar">
+        <div>
+            <h1>TrackSecure</h1>
+            <p>Explore Hiking Trails</p>
+        </div>
+
+        <a href="index.html" class="back-btn">
+            ← Home
+        </a>
+    </header>
+
+    <main>
+
+        <section class="page-header">
+            <span class="hero-label">Sabah Hiking Guide</span>
+
+            <h2>Find Your Next Hiking Trail</h2>
+
+            <p>
+                Search and filter hiking locations based on
+                difficulty and district.
+            </p>
+        </section>
+
+        <section class="filter-section">
+
+            <input
+                type="text"
+                id="trailSearch"
+                placeholder="Search trail or location..."
+            >
+
+            <select id="difficultyFilter">
+                <option value="all">All Difficulty</option>
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+                <option value="extreme">Extreme</option>
+            </select>
+
+            <select id="districtFilter"><option value="all">All Districts</option></select>
+
+        </section>
+
+        <p id="resultCount" class="result-count"></p>
+
+        <section class="trail-grid" id="trailList">
+
+            <article
+                class="trail-card explore-trail-card"
+                data-name="mount kinabalu"
+                data-difficulty="hard"
+                data-district="kundasang"
+            >
+                <div class="trail-image kinabalu">
+                    <span class="difficulty hard">Hard</span>
+                </div>
+
+                <div class="trail-content">
+                    <h3>Mount Kinabalu</h3>
+                    <p>📍 Kundasang, Sabah</p>
+
+                    <div class="trail-info">
+                        <span>🥾 8.7 km</span>
+                        <span>⏱️ 2 Days</span>
+                    </div>
+
+                    <p class="trail-description">
+                        Sabah's highest mountain with challenging
+                        terrain and beautiful summit views.
+                    </p>
+
+                    <button
+                        class="details-btn"
+                        data-trail="mount-kinabalu"
+                    >
+                        View Details
+                    </button>
+                </div>
+            </article>
+
+            <article
+                class="trail-card explore-trail-card"
+                data-name="bukit sosodikon"
+                data-difficulty="easy"
+                data-district="kundasang"
+            >
+                <div class="trail-image sosodikon">
+                    <span class="difficulty easy">Easy</span>
+                </div>
+
+                <div class="trail-content">
+                    <h3>Bukit Sosodikon</h3>
+                    <p>📍 Kundasang, Sabah</p>
+
+                    <div class="trail-info">
+                        <span>🥾 1.5 km</span>
+                        <span>⏱️ 1 Hour</span>
+                    </div>
+
+                    <p class="trail-description">
+                        A beginner-friendly trail with panoramic
+                        views of Kundasang.
+                    </p>
+
+                    <button
+                        class="details-btn"
+                        data-trail="bukit-sosodikon"
+                    >
+                        View Details
+                    </button>
+                </div>
+            </article>
+
+            <article
+                class="trail-card explore-trail-card"
+                data-name="mount silam"
+                data-difficulty="medium"
+                data-district="lahad-datu"
+            >
+                <div class="trail-image silam">
+                    <span class="difficulty medium">Medium</span>
+                </div>
+
+                <div class="trail-content">
+                    <h3>Mount Silam</h3>
+                    <p>📍 Lahad Datu, Sabah</p>
+
+                    <div class="trail-info">
+                        <span>🥾 4.8 km</span>
+                        <span>⏱️ 3 Hours</span>
+                    </div>
+
+                    <p class="trail-description">
+                        A forest trail known for natural biodiversity
+                        and scenic observation points.
+                    </p>
+
+                    <button
+                        class="details-btn"
+                        data-trail="mount-silam"
+                    >
+                        View Details
+                    </button>
+                </div>
+            </article>
+
+            <article
+                class="trail-card explore-trail-card"
+                data-name="bukit kokol"
+                data-difficulty="medium"
+                data-district="kota-kinabalu"
+            >
+                <div class="trail-image kokol">
+                    <span class="difficulty medium">Medium</span>
+                </div>
+
+                <div class="trail-content">
+                    <h3>Bukit Kokol</h3>
+                    <p>📍 Kota Kinabalu, Sabah</p>
+
+                    <div class="trail-info">
+                        <span>🥾 5 km</span>
+                        <span>⏱️ 3 Hours</span>
+                    </div>
+
+                    <p class="trail-description">
+                        A popular hiking area with views overlooking
+                        Kota Kinabalu city.
+                    </p>
+
+                    <button
+                        class="details-btn"
+                        data-trail="bukit-kokol"
+                    >
+                        View Details
+                    </button>
+                </div>
+            </article>
+
+            <article
+                class="trail-card explore-trail-card"
+                data-name="bukit bongol"
+                data-difficulty="medium"
+                data-district="kudat"
+            >
+                <div class="trail-image bongol">
+                    <span class="difficulty medium">Medium</span>
+                </div>
+
+                <div class="trail-content">
+                    <h3>Bukit Bongol</h3>
+                    <p>📍 Kudat, Sabah</p>
+
+                    <div class="trail-info">
+                        <span>🥾 3.5 km</span>
+                        <span>⏱️ 2 Hours</span>
+                    </div>
+
+                    <p class="trail-description">
+                        A scenic countryside trail with open hill
+                        views and steep sections.
+                    </p>
+
+                    <button
+                        class="details-btn"
+                        data-trail="bukit-bongol"
+                    >
+                        View Details
+                    </button>
+                </div>
+            </article>
+
+            <article
+                class="trail-card explore-trail-card"
+                data-name="bukit gemok"
+                data-difficulty="easy"
+                data-district="tawau"
+            >
+                <div class="trail-image gemok">
+                    <span class="difficulty easy">Easy</span>
+                </div>
+
+                <div class="trail-content">
+                    <h3>Bukit Gemok</h3>
+                    <p>📍 Tawau, Sabah</p>
+
+                    <div class="trail-info">
+                        <span>🥾 4.2 km</span>
+                        <span>⏱️ 2 Hours</span>
+                    </div>
+
+                    <p class="trail-description">
+                        A recreational forest trail with a canopy
+                        walkway and shaded paths.
+                    </p>
+
+                    <button
+                        class="details-btn"
+                        data-trail="bukit-gemok"
+                    >
+                        View Details
+                    </button>
+                </div>
+            </article>
+     
+
+        </section>
+
+        <div id="emptyState" class="empty-state">
+            <span>🥾</span>
+            <h3>No trails found</h3>
+            <p>Try changing your search or filter.</p>
+        </div>
+
+    </main>
+
+    <nav class="bottom-nav">
+        <a href="index.html" class="nav-item">
+            <span>🏠</span>
+            Home
+        </a>
+
+        <a href="trails.html" class="nav-item active">
+            <span>🥾</span>
+            Trails
+        </a>
+
+        <a href="map.html" class="nav-item">
+            <span>🗺️</span>
+            Map
+        </a>
+
+        <a href="favourites.html" class="nav-item">
+            <span>❤️</span>
+            Favourite
+        </a>
+
+        <a href="profile.html" class="nav-item">
+            <span>👤</span>
+            Profile
+        </a>
+    </nav>
+
+    <script src="trail-data.js"></script>
+    <script src="trails.js"></script>
+
+</body>
+</html>

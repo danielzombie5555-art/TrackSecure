@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Weather | TrackSecure</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="topbar">
+        <div>
+            <h1>TrackSecure</h1>
+            <p>Weather & Hiking Condition</p>
+        </div>
+
+        <a href="index.html" class="back-btn">
+            ← Home
+        </a>
+    </header>
+
+    <main>
+
+        <section class="page-header weather-page-header">
+            <span class="hero-label">
+                Check Before You Hike
+            </span>
+
+            <h2>Weather Conditions</h2>
+
+            <p>
+                Select a hiking location to view current weather
+                and hiking recommendations.
+            </p>
+        </section>
+
+        <section class="weather-controls">
+
+            <select id="weatherLocation">
+                <option value="kundasang">
+                    Kundasang
+                </option>
+
+                <option value="tawau">
+                    Tawau
+                </option>
+
+                <option value="lahad-datu">
+                    Lahad Datu
+                </option>
+
+                <option value="kota-kinabalu">
+                    Kota Kinabalu
+                </option>
+
+                <option value="kudat">
+                    Kudat
+                </option>
+            </select>
+
+            <button
+                type="button"
+                id="checkWeatherBtn"
+            >
+                Check Weather
+            </button>
+
+        </section>
+
+        <section class="weather-main-card">
+
+            <div class="weather-current">
+
+                <div class="weather-icon" id="weatherIcon">
+                    ⛅
+                </div>
+
+                <div>
+                    <p id="weatherLocationName">
+                        Kundasang, Sabah
+                    </p>
+
+                    <h2 id="weatherTemperature">
+                        22°C
+                    </h2>
+
+                    <strong id="weatherCondition">
+                        Partly Cloudy
+                    </strong>
+                </div>
+
+            </div>
+
+            <div class="weather-details-grid">
+
+                <div>
+                    <span>💧</span>
+                    <p>Humidity</p>
+                    <strong id="weatherHumidity">
+                        78%
+                    </strong>
+                </div>
+
+                <div>
+                    <span>💨</span>
+                    <p>Wind</p>
+                    <strong id="weatherWind">
+                        9 km/h
+                    </strong>
+                </div>
+
+                <div>
+                    <span>🌧️</span>
+                    <p>Rain Chance</p>
+                    <strong id="weatherRain">
+                        30%
+                    </strong>
+                </div>
+
+                <div>
+                    <span>🌡️</span>
+                    <p>Feels Like</p>
+                    <strong id="weatherFeels">
+                        23°C
+                    </strong>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section
+            class="hiking-condition-card"
+            id="hikingConditionCard"
+        >
+
+            <div class="condition-status-icon">
+                ✓
+            </div>
+
+            <div>
+                <p>Hiking Condition</p>
+
+                <h2 id="hikingConditionTitle">
+                    Good for Hiking
+                </h2>
+
+                <p id="hikingConditionMessage">
+                    Weather conditions are generally suitable,
+                    but carry a light raincoat.
+                </p>
+            </div>
+
+        </section>
+
+        <section class="weather-section">
+
+            <h2>4-Day Forecast</h2>
+
+            <div
+                class="forecast-grid"
+                id="forecastGrid"
+            >
+            </div>
+
+        </section>
+
+        <section class="weather-section">
+
+            <h2>Weather Safety Tips</h2>
+
+            <div class="weather-tip-grid">
+
+                <article class="weather-tip-card">
+                    <span>🌧️</span>
+                    <h3>Rain</h3>
+                    <p>
+                        Avoid steep or slippery trails during
+                        heavy rain.
+                    </p>
+                </article>
+
+                <article class="weather-tip-card">
+                    <span>⛈️</span>
+                    <h3>Thunderstorm</h3>
+                    <p>
+                        Do not hike on exposed ridges during
+                        thunderstorms.
+                    </p>
+                </article>
+
+                <article class="weather-tip-card">
+                    <span>☀️</span>
+                    <h3>Hot Weather</h3>
+                    <p>
+                        Bring enough water and avoid hiking
+                        during extreme heat.
+                    </p>
+                </article>
+
+                <article class="weather-tip-card">
+                    <span>🌫️</span>
+                    <h3>Low Visibility</h3>
+                    <p>
+                        Stay on marked trails and avoid hiking
+                        alone in thick fog.
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <nav class="bottom-nav">
+
+        <a href="index.html" class="nav-item">
+            <span>🏠</span>
+            Home
+        </a>
+
+        <a href="trails.html" class="nav-item">
+            <span>🥾</span>
+            Trails
+        </a>
+
+        <a href="map.html" class="nav-item">
+            <span>🗺️</span>
+            Map
+        </a>
+
+        <a href="favourites.html" class="nav-item">
+            <span>❤️</span>
+            Favourite
+        </a>
+
+        <a href="profile.html" class="nav-item">
+            <span>👤</span>
+            Profile
+        </a>
+
+    </nav>
+
+    <script src="weather.js"></script>
+
+</body>
+</html>

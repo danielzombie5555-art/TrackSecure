@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Packing Checklist | TrackSecure</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="topbar">
+        <div>
+            <h1>TrackSecure</h1>
+            <p>Hiking Packing Checklist</p>
+        </div>
+
+        <a href="index.html" class="back-btn">
+            ← Home
+        </a>
+    </header>
+
+    <main>
+
+        <section class="page-header checklist-page-header">
+
+            <span class="hero-label">
+                Prepare Before Hiking
+            </span>
+
+            <h2>Packing Checklist</h2>
+
+            <p>
+                Check your hiking equipment before starting
+                your journey.
+            </p>
+
+        </section>
+
+        <section class="checklist-progress-card">
+
+            <div class="progress-information">
+
+                <div>
+                    <p>Preparation Progress</p>
+
+                    <strong id="progressText">
+                        0 of 0 items prepared
+                    </strong>
+                </div>
+
+                <span id="progressPercentage">
+                    0%
+                </span>
+
+            </div>
+
+            <div class="progress-bar">
+
+                <div
+                    class="progress-bar-fill"
+                    id="progressBarFill"
+                ></div>
+
+            </div>
+
+            <p
+                class="progress-message"
+                id="progressMessage"
+            >
+                Start preparing your hiking equipment.
+            </p>
+
+        </section>
+
+        <section class="checklist-controls">
+
+            <div class="checklist-search">
+
+                <input
+                    type="text"
+                    id="checklistSearch"
+                    placeholder="Search equipment..."
+                >
+
+            </div>
+
+            <div class="checklist-control-buttons">
+
+                <button
+                    type="button"
+                    id="selectAllBtn"
+                    class="select-all-btn"
+                >
+                    Select All
+                </button>
+
+                <button
+                    type="button"
+                    id="resetChecklistBtn"
+                    class="reset-checklist-btn"
+                >
+                    Reset
+                </button>
+
+            </div>
+
+        </section>
+
+        <section
+            id="checklistCategories"
+            class="checklist-category-container"
+        >
+        </section>
+
+        <section
+            id="checklistEmptyState"
+            class="checklist-empty-state"
+        >
+            <span>🎒</span>
+
+            <h3>No equipment found</h3>
+
+            <p>
+                Try searching with another keyword.
+            </p>
+        </section>
+
+        <section class="custom-item-card">
+
+            <div>
+                <h2>Add Personal Item</h2>
+
+                <p>
+                    Add another item that you need for your hike.
+                </p>
+            </div>
+
+            <form
+                id="customItemForm"
+                class="custom-item-form"
+            >
+
+                <input
+                    type="text"
+                    id="customItemInput"
+                    placeholder="Example: Camera"
+                    maxlength="50"
+                    required
+                >
+
+                <select id="customCategoryInput">
+
+                    <option value="personal">
+                        Personal
+                    </option>
+
+                    <option value="essential">
+                        Essential
+                    </option>
+
+                    <option value="clothing">
+                        Clothing
+                    </option>
+
+                    <option value="food">
+                        Food & Water
+                    </option>
+
+                    <option value="safety">
+                        Safety
+                    </option>
+
+                </select>
+
+                <button type="submit">
+                    Add Item
+                </button>
+
+            </form>
+
+        </section>
+
+        <section class="packing-reminder">
+
+            <span>⚠️</span>
+
+            <div>
+                <h3>Important Reminder</h3>
+
+                <p>
+                    Adjust your equipment according to trail
+                    difficulty, weather, distance and hiking duration.
+                </p>
+            </div>
+
+        </section>
+
+    </main>
+
+    <nav class="bottom-nav">
+
+        <a href="index.html" class="nav-item">
+            <span>🏠</span>
+            Home
+        </a>
+
+        <a href="trails.html" class="nav-item">
+            <span>🥾</span>
+            Trails
+        </a>
+
+        <a href="map.html" class="nav-item">
+            <span>🗺️</span>
+            Map
+        </a>
+
+        <a href="favourites.html" class="nav-item">
+            <span>❤️</span>
+            Favourite
+        </a>
+
+        <a href="profile.html" class="nav-item">
+            <span>👤</span>
+            Profile
+        </a>
+
+    </nav>
+
+    <script src="checklist.js"></script>
+
+</body>
+</html>

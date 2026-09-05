@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Hiking Map | TrackSecure</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Leaflet CSS -->
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    >
+</head>
+
+<body>
+
+    <header class="topbar">
+        <div>
+            <h1>TrackSecure</h1>
+            <p>Interactive Hiking Map</p>
+        </div>
+
+        <a href="index.html" class="back-btn">
+            ← Home
+        </a>
+    </header>
+
+    <main>
+
+        <section class="page-header map-page-header">
+            <span class="hero-label">
+                Explore Tawau
+            </span>
+
+            <h2>Tawau Hiking Trail Map</h2>
+
+            <p>
+                View hiking locations, difficulty levels and trail
+                information across Tawau on an interactive map.
+            </p>
+        </section>
+
+        <section class="map-filter-section">
+
+            <div class="map-search-box">
+                <input
+                    type="text"
+                    id="mapSearchInput"
+                    placeholder="Search hiking trail..."
+                >
+
+                <button
+                    type="button"
+                    id="mapSearchBtn"
+                >
+                    Search
+                </button>
+            </div>
+
+            <div class="map-filter-buttons">
+
+                <button
+                    type="button"
+                    class="map-filter-btn active"
+                    data-difficulty="all"
+                >
+                    All
+                </button>
+
+                <button
+                    type="button"
+                    class="map-filter-btn"
+                    data-difficulty="easy"
+                >
+                    Easy
+                </button>
+
+                <button
+                    type="button"
+                    class="map-filter-btn"
+                    data-difficulty="medium"
+                >
+                    Medium
+                </button>
+
+                <button
+                    type="button"
+                    class="map-filter-btn"
+                    data-difficulty="hard"
+                >
+                    Hard
+                </button>
+
+            </div>
+
+        </section>
+
+        <section class="map-layout">
+
+            <div class="map-container">
+                <div id="hikingMap"></div>
+            </div>
+
+            <aside class="map-sidebar">
+
+                <div class="map-sidebar-header">
+                    <div>
+                        <p>Available Locations</p>
+
+                        <strong id="mapResultCount">
+                            0 trails
+                        </strong>
+                    </div>
+
+                    <button
+                        type="button"
+                        id="resetMapBtn"
+                        class="reset-map-btn"
+                    >
+                        Reset
+                    </button>
+                </div>
+
+                <div
+                    id="mapTrailList"
+                    class="map-trail-list"
+                >
+                </div>
+
+            </aside>
+
+        </section>
+
+        <section class="map-legend">
+
+            <h3>Difficulty Guide</h3>
+
+            <div class="legend-items">
+
+                <div>
+                    <span class="legend-dot easy-dot"></span>
+                    Easy
+                </div>
+
+                <div>
+                    <span class="legend-dot medium-dot"></span>
+                    Medium
+                </div>
+
+                <div>
+                    <span class="legend-dot hard-dot"></span>
+                    Hard
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <nav class="bottom-nav">
+
+        <a href="index.html" class="nav-item">
+            <span>🏠</span>
+            Home
+        </a>
+
+        <a href="trails.html" class="nav-item">
+            <span>🥾</span>
+            Trails
+        </a>
+
+        <a href="map.html" class="nav-item active">
+            <span>🗺️</span>
+            Map
+        </a>
+
+        <a href="favourites.html" class="nav-item">
+            <span>❤️</span>
+            Favourite
+        </a>
+
+        <a href="profile.html" class="nav-item">
+            <span>👤</span>
+            Profile
+        </a>
+
+    </nav>
+
+    <!-- Leaflet JavaScript -->
+    <script
+        src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    ></script>
+
+    <script src="trail-data.js"></script>
+    <script src="map.js"></script>
+
+</body>
+</html>

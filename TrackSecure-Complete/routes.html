@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiking Route | TrackSecure</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+    <div><h1>TrackSecure</h1><p>Hiking Route Guide</p></div>
+    <a href="javascript:history.back()" class="back-btn">← Back</a>
+</header>
+<main>
+    <section class="route-page-hero">
+        <span class="hero-label">TAWAU, SABAH</span>
+        <h2 id="routeTitle">Hiking Route</h2>
+        <p id="routeSubtitle">Published trail information</p>
+    </section>
+
+    <section class="route-page-grid">
+        <article class="information-card">
+            <h2>🥾 Route Information</h2>
+            <div id="routeSteps" class="route-steps"></div>
+        </article>
+
+        <article class="information-card">
+            <h2>📍 Trail Location</h2>
+            <p id="routeLocation">-</p>
+            <p id="routeStats">-</p>
+            <a id="navigationLink" class="route-btn" target="_blank" rel="noopener">🧭 Open Location</a>
+        </article>
+    </section>
+
+    <section class="information-card" id="routePreviewCard" style="display:none; margin:20px;">
+        <h2>🗺️ Published Route Map</h2>
+        <iframe id="routePreview" title="Published hiking route map" style="width:100%; min-height:520px; border:0; border-radius:16px;"></iframe>
+    </section>
+
+    <section class="information-card route-notice">
+        <h2>⚠️ Route Accuracy & Safety</h2>
+        <p id="routeStatus">-</p>
+        <p class="small-note">TrackSecure does not create or guess GPS tracks where a verified route is not available. Always confirm current access, permits and trail conditions before hiking.</p>
+        <a id="sourceLink" class="secondary-btn" target="_blank" rel="noopener">View Published Route Source</a>
+    </section>
+</main>
+<nav class="bottom-nav">
+    <a href="index.html" class="nav-item"><span>🏠</span>Home</a>
+    <a href="trails.html" class="nav-item active"><span>🥾</span>Trails</a>
+    <a href="map.html" class="nav-item"><span>🗺️</span>Map</a>
+    <a href="favourites.html" class="nav-item"><span>❤️</span>Favourite</a>
+    <a href="profile.html" class="nav-item"><span>👤</span>Profile</a>
+</nav>
+<script src="trail-data.js"></script>
+<script src="routes.js"></script>
+</body>
+</html>

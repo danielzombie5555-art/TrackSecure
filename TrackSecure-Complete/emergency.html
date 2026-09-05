@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Emergency & SOS | TrackSecure</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+>
+
+<script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+></script>
+</head>
+
+<body>
+
+    <header class="topbar">
+        <div>
+            <h1>TrackSecure</h1>
+            <p>Emergency & Hiking Safety</p>
+        </div>
+
+        <a href="index.html" class="back-btn">
+            ← Home
+        </a>
+    </header>
+
+    <main>
+
+        <section class="page-header emergency-page-header">
+            <span class="hero-label">
+                Safety First
+            </span>
+
+            <h2>Emergency & SOS</h2>
+
+            <p>
+                Use this page during an emergency to share your
+                current location and contact the appropriate service.
+            </p>
+        </section>
+
+        <section class="emergency-warning-banner">
+            <span>⚠️</span>
+
+            <div>
+                <h3>Important</h3>
+
+                <p>
+                    In a serious emergency, call the official
+                    emergency number immediately.
+                </p>
+            </div>
+        </section>
+
+        <section class="sos-main-card">
+
+            <div class="sos-main-content">
+
+                <span class="sos-icon">🚨</span>
+
+                <div>
+                    <p>Emergency Assistance</p>
+                    <h2>Need Immediate Help?</h2>
+
+                    <p>
+                        Call emergency services or share your
+                        current location with someone you trust.
+                    </p>
+                </div>
+
+            </div>
+
+            <a
+                href="tel:999"
+                class="sos-call-btn"
+            >
+                📞 Call 999
+            </a>
+
+        </section>
+
+        <section class="emergency-section">
+
+            <div class="section-heading">
+                <h2>Your Current Location</h2>
+
+                <button
+                    type="button"
+                    id="refreshLocationBtn"
+                    class="refresh-location-btn"
+                >
+                    Refresh Location
+                </button>
+            </div>
+
+            <div class="location-card">
+
+                <div class="location-status">
+
+                    <span>📍</span>
+
+                    <div>
+                        <p>Location Status</p>
+
+                        <strong id="locationStatus">
+                            Location not detected
+                        </strong>
+                    </div>
+
+                </div>
+
+                <div class="coordinate-grid">
+
+                    <div>
+                        <p>Latitude</p>
+                        <strong id="latitudeValue">-</strong>
+                    </div>
+
+                    <div>
+                        <p>Longitude</p>
+                        <strong id="longitudeValue">-</strong>
+                    </div>
+
+                    <div>
+                        <p>Accuracy</p>
+                        <strong id="accuracyValue">-</strong>
+                    </div>
+
+                </div>
+
+                <p
+                    id="locationError"
+                    class="location-error"
+                ></p>
+
+                <div class="emergency-map-wrapper">
+                    <div id="emergencyMap"></div>
+
+                    <div class="map-accuracy-info">
+                        <span>📡</span>
+
+                        <div>
+                            <p>GPS Accuracy</p>
+                            <strong id="mapAccuracyText">
+                                Waiting for location...
+                            </strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="location-actions">
+
+                    <button
+                        type="button"
+                        id="getLocationBtn"
+                        class="primary-location-btn"
+                    >
+                        📍 Start Live Location
+                    </button>
+
+                    <button
+                        type="button"
+                        id="stopTrackingBtn"
+                        class="stop-tracking-btn"
+                        disabled
+                    >
+                        Stop Tracking
+                    </button>
+
+                    <button
+                        type="button"
+                        id="copyLocationBtn"
+                        class="secondary-location-btn"
+                        disabled
+                    >
+                        Copy Coordinates
+                    </button>
+
+                    <a
+                        href="#"
+                        id="openMapBtn"
+                        class="secondary-location-btn disabled-link"
+                    >
+                        Open in Map
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="emergency-section">
+
+            <h2>Emergency Services</h2>
+
+            <div class="emergency-contact-grid">
+
+                <article class="emergency-contact-card">
+                    <span>🚓</span>
+
+                    <h3>Emergency Line</h3>
+
+                    <p>
+                        Police, ambulance and fire emergency.
+                    </p>
+
+                    <a href="tel:999">
+                        Call 999
+                    </a>
+                </article>
+
+                <article class="emergency-contact-card">
+                    <span>🚒</span>
+
+                    <h3>Fire & Rescue</h3>
+
+                    <p>
+                        Fire, rescue and search assistance.
+                    </p>
+
+                    <a href="tel:999">
+                        Call 999
+                    </a>
+                </article>
+
+                <article class="emergency-contact-card">
+                    <span>🏥</span>
+
+                    <h3>Medical Emergency</h3>
+
+                    <p>
+                        Request urgent medical assistance.
+                    </p>
+
+                    <a href="tel:999">
+                        Call 999
+                    </a>
+                </article>
+
+                <article class="emergency-contact-card">
+                    <span>🌲</span>
+
+                    <h3>Park Management</h3>
+
+                    <p>
+                        Contact the local park or trail operator.
+                    </p>
+
+                    <a href="trails.html">
+                        View Trail Info
+                    </a>
+                </article>
+
+            </div>
+
+        </section>
+
+        <section class="emergency-section">
+
+            <h2>Personal Emergency Contact</h2>
+
+            <div class="personal-contact-card">
+
+                <form id="emergencyContactForm">
+
+                    <div class="emergency-form-group">
+                        <label for="emergencyContactName">
+                            Contact Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="emergencyContactName"
+                            placeholder="Example: Family Member"
+                            maxlength="50"
+                            required
+                        >
+                    </div>
+
+                    <div class="emergency-form-group">
+                        <label for="emergencyContactPhone">
+                            Phone Number
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="emergencyContactPhone"
+                            placeholder="Example: 60123456789"
+                            maxlength="20"
+                            required
+                        >
+                    </div>
+
+                    <button type="submit">
+                        Save Emergency Contact
+                    </button>
+
+                </form>
+
+                <div
+                    id="savedEmergencyContact"
+                    class="saved-emergency-contact"
+                >
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="emergency-section">
+
+            <h2>Send Emergency Message</h2>
+
+            <div class="emergency-message-card">
+
+                <textarea
+                    id="emergencyMessage"
+                    rows="6"
+                >I need emergency assistance while hiking. Please check my location and contact emergency services if necessary.</textarea>
+
+                <div class="emergency-message-actions">
+
+                    <button
+                        type="button"
+                        id="addLocationToMessageBtn"
+                    >
+                        Add Current Location
+                    </button>
+
+                    <button
+                        type="button"
+                        id="copyEmergencyMessageBtn"
+                    >
+                        Copy Message
+                    </button>
+
+                    <a
+                        href="#"
+                        id="whatsappEmergencyBtn"
+                        class="whatsapp-emergency-btn disabled-link"
+                    >
+                        Send via WhatsApp
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="emergency-safety-tips">
+
+            <h2>What to Do During an Emergency</h2>
+
+            <div class="emergency-tip-grid">
+
+                <article>
+                    <span>1</span>
+
+                    <div>
+                        <h3>Stay Calm</h3>
+                        <p>
+                            Stop moving and assess the situation.
+                        </p>
+                    </div>
+                </article>
+
+                <article>
+                    <span>2</span>
+
+                    <div>
+                        <h3>Call for Help</h3>
+                        <p>
+                            Contact emergency services or a trusted person.
+                        </p>
+                    </div>
+                </article>
+
+                <article>
+                    <span>3</span>
+
+                    <div>
+                        <h3>Share Location</h3>
+                        <p>
+                            Send your coordinates and trail name.
+                        </p>
+                    </div>
+                </article>
+
+                <article>
+                    <span>4</span>
+
+                    <div>
+                        <h3>Remain Visible</h3>
+                        <p>
+                            Stay in a safe location where rescuers can find you.
+                        </p>
+                    </div>
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <nav class="bottom-nav">
+
+        <a href="index.html" class="nav-item">
+            <span>🏠</span>
+            Home
+        </a>
+
+        <a href="trails.html" class="nav-item">
+            <span>🥾</span>
+            Trails
+        </a>
+
+        <a href="map.html" class="nav-item">
+            <span>🗺️</span>
+            Map
+        </a>
+
+        <a href="favourites.html" class="nav-item">
+            <span>❤️</span>
+            Favourite
+        </a>
+
+        <a href="profile.html" class="nav-item">
+            <span>👤</span>
+            Profile
+        </a>
+
+    </nav>
+
+    <script src="emergency.js"></script>
+
+</body>
+</html>

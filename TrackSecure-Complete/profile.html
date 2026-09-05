@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Profile | TrackSecure</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+</head>
+
+<body>
+
+    <header class="topbar">
+
+        <div>
+            <h1>TrackSecure</h1>
+            <p>User Profile</p>
+        </div>
+
+        <a
+            href="index.html"
+            class="back-btn"
+        >
+            ← Home
+        </a>
+
+    </header>
+
+    <main>
+
+        <section class="page-header profile-page-header">
+
+            <span class="hero-label">
+                My Account
+            </span>
+
+            <h2>Profile</h2>
+
+            <p>
+                Manage your personal details, emergency
+                information and hiking activity.
+            </p>
+
+        </section>
+
+        <!-- PROFILE INFORMATION -->
+        <section class="profile-section">
+
+            <h2>Personal Information</h2>
+
+            <div class="profile-card">
+
+                <div class="profile-avatar">
+                    👤
+                </div>
+
+                <form id="profileForm">
+
+                    <div class="profile-form-group">
+
+                        <label for="profileName">
+                            Full Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="profileName"
+                            placeholder="Enter your full name"
+                            maxlength="60"
+                            required
+                        >
+
+                    </div>
+
+                    <div class="profile-form-group">
+
+                        <label for="profilePhone">
+                            Phone Number
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="profilePhone"
+                            placeholder="Example: 60123456789"
+                            maxlength="20"
+                        >
+
+                    </div>
+
+                    <div class="profile-form-group">
+
+                        <label for="profileEmail">
+                            Email Address
+                        </label>
+
+                        <input
+                            type="email"
+                            id="profileEmail"
+                            placeholder="example@email.com"
+                            maxlength="80"
+                        >
+
+                    </div>
+
+                    <div class="profile-form-group">
+
+                        <label for="profileExperience">
+                            Hiking Experience
+                        </label>
+
+                        <select id="profileExperience">
+
+                            <option value="Beginner">
+                                Beginner
+                            </option>
+
+                            <option value="Intermediate">
+                                Intermediate
+                            </option>
+
+                            <option value="Advanced">
+                                Advanced
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                    <button
+                        type="submit"
+                        class="profile-save-btn"
+                    >
+                        Save Profile
+                    </button>
+
+                </form>
+
+                <p
+                    id="profileSaveMessage"
+                    class="profile-save-message"
+                ></p>
+
+            </div>
+
+        </section>
+
+        <!-- HIKING STATISTICS -->
+        <section class="profile-section">
+
+            <h2>Hiking Activity</h2>
+
+            <div class="profile-stat-grid">
+
+                <article class="profile-stat-card">
+
+                    <span>🥾</span>
+
+                    <strong id="completedTrailCount">
+                        0
+                    </strong>
+
+                    <p>Completed Trails</p>
+
+                </article>
+
+                <article class="profile-stat-card">
+
+                    <span>❤️</span>
+
+                    <strong id="favouriteTrailCount">
+                        0
+                    </strong>
+
+                    <p>Favourite Trails</p>
+
+                </article>
+
+                <article class="profile-stat-card">
+
+                    <span>✅</span>
+
+                    <strong id="checklistProgress">
+                        0%
+                    </strong>
+
+                    <p>Packing Progress</p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- EMERGENCY CONTACT -->
+        <section class="profile-section">
+
+            <h2>Emergency Contact</h2>
+
+            <div class="profile-emergency-card">
+
+                <div id="profileEmergencyContact">
+
+                    <p>
+                        No emergency contact saved.
+                    </p>
+
+                </div>
+
+                <a
+                    href="emergency.html"
+                    class="profile-link-btn"
+                >
+                    Manage Emergency Contact
+                </a>
+
+            </div>
+
+        </section>
+
+        <!-- APP SETTINGS -->
+        <section class="profile-section">
+
+            <h2>App Settings</h2>
+
+            <div class="profile-settings-card">
+
+                <div class="profile-setting-row">
+
+                    <div>
+                        <strong>
+                            Location Permission
+                        </strong>
+
+                        <p>
+                            Check whether location access is available.
+                        </p>
+                    </div>
+
+                    <span id="locationPermissionStatus">
+                        Checking...
+                    </span>
+
+                </div>
+
+                <div class="profile-setting-row">
+
+                    <div>
+                        <strong>
+                            Notifications
+                        </strong>
+
+                        <p>
+                            Receive hiking safety reminders.
+                        </p>
+                    </div>
+
+                    <label class="profile-switch">
+
+                        <input
+                            type="checkbox"
+                            id="notificationToggle"
+                        >
+
+                        <span class="profile-slider"></span>
+
+                    </label>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- DATA MANAGEMENT -->
+        <section class="profile-section">
+
+            <h2>Data Management</h2>
+
+            <div class="profile-danger-card">
+
+                <div>
+
+                    <strong>
+                        Reset TrackSecure Data
+                    </strong>
+
+                    <p>
+                        This will remove your saved profile,
+                        favourites, checklist and emergency contact.
+                    </p>
+
+                </div>
+
+                <button
+                    type="button"
+                    id="resetProfileDataBtn"
+                    class="profile-reset-btn"
+                >
+                    Reset All Data
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <nav class="bottom-nav">
+
+        <a
+            href="index.html"
+            class="nav-item"
+        >
+            <span>🏠</span>
+            Home
+        </a>
+
+        <a
+            href="trails.html"
+            class="nav-item"
+        >
+            <span>🥾</span>
+            Trails
+        </a>
+
+        <a
+            href="map.html"
+            class="nav-item"
+        >
+            <span>🗺️</span>
+            Map
+        </a>
+
+        <a
+            href="favourites.html"
+            class="nav-item"
+        >
+            <span>❤️</span>
+            Favourite
+        </a>
+
+        <a
+            href="profile.html"
+            class="nav-item active"
+        >
+            <span>👤</span>
+            Profile
+        </a>
+
+    </nav>
+
+    <script src="profile.js"></script>
+
+</body>
+
+</html>

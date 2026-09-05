@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrackSecure</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+    <div>
+        <h1>TrackSecure</h1>
+        <p>Plan Smart. Hike Safe.</p>
+    </div>
+    <button class="profile-btn">👤</button>
+</header>
+
+<main>
+    <section class="hero">
+        <div class="hero-content">
+            <span class="hero-label">Hiking Safety App</span>
+            <h2>Explore Tawau Trails Safely</h2>
+            <p>Discover hiking routes, prepare your equipment and get useful safety information.</p>
+            <a href="trails.html" class="explore-btn">Explore Trails</a>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="section-heading">
+            <h2>Popular Tawau Trails</h2>
+            <button class="view-all-btn">View All</button>
+        </div>
+
+        <div class="trail-grid">
+            <article class="trail-card">
+                <div class="trail-image" style="background-image:url('https://www.mysabah.com/wordpress/wp-content/uploads/2023/12/20231222_27.jpg')">
+                    <span class="difficulty medium">Medium</span>
+                </div>
+                <div class="trail-content">
+                    <h3>Bukit Panchang</h3>
+                    <p>📍 Tawau, Sabah</p>
+                    <div class="trail-info"><span>🥾 1.08 km</span><span>⏱️ 1–2 Hours</span></div>
+                    <button class="details-btn" data-trail="bukit-panchang">View Details</button>
+                </div>
+            </article>
+
+            <article class="trail-card">
+                <div class="trail-image" style="background-image:url('https://www.etawau.com/NaturalResources/Forest/MembaluaReserve/MembaluaReserve/Membalua_2014_08P2000.jpg')">
+                    <span class="difficulty medium">Medium</span>
+                </div>
+                <div class="trail-content">
+                    <h3>Membalua Jungle Trek</h3>
+                    <p>📍 Tawau, Sabah</p>
+                    <div class="trail-info"><span>🥾 Local Trail</span><span>⏱️ Varies</span></div>
+                    <button class="details-btn" data-trail="bukit-membalua">View Details</button>
+                </div>
+            </article>
+
+            <article class="trail-card">
+                <div class="trail-image" style="background-image:url('https://www.etawau.com/Recreation/CrossCountry/Hill_b.jpg')">
+                    <span class="difficulty medium">Medium</span>
+                </div>
+                <div class="trail-content">
+                    <h3>Sin Onn Hill</h3>
+                    <p>📍 Tawau, Sabah</p>
+                    <div class="trail-info"><span>🥾 Local Trail</span><span>⏱️ Varies</span></div>
+                    <button class="details-btn" data-trail="bukit-sin-onn">View Details</button>
+                </div>
+            </article>
+
+            <article class="trail-card">
+                <div class="trail-image" style="background-image:url('https://sabahtravel-assets.s3.amazonaws.com/images/20240126-lmy8f-lk-05693-jpg')">
+                    <span class="difficulty easy">Easy</span>
+                </div>
+                <div class="trail-content">
+                    <h3>Table Waterfall</h3>
+                    <p>📍 Tawau Hills Park</p>
+                    <div class="trail-info"><span>🥾 ~2.5 km</span><span>⏱️ 1.5–2 Hours</span></div>
+                    <button class="details-btn" data-trail="table-waterfall">View Details</button>
+                </div>
+            </article>
+
+            <article class="trail-card">
+                <div class="trail-image" style="background-image:url('https://www.gunungbagging.com/wp-content/NEXTGEN/bombalai-hill/IMG_20230707_090142.jpg')">
+                    <span class="difficulty medium">Medium</span>
+                </div>
+                <div class="trail-content">
+                    <h3>Bombalai Hill</h3>
+                    <p>📍 Tawau Hills Park</p>
+                    <div class="trail-info"><span>🥾 ~1.9 km</span><span>⏱️ ~1 Hour</span></div>
+                    <button class="details-btn" data-trail="bombalai-hill">View Details</button>
+                </div>
+            </article>
+
+            <article class="trail-card">
+                <div class="trail-image" style="background-image:url('https://sabahnites.com/wp-content/uploads/2022/08/145714720_177562024164280_8840149135487162573_n.jpg')">
+                    <span class="difficulty easy">Easy</span>
+                </div>
+                <div class="trail-content">
+                    <h3>Bukit Gemok</h3>
+                    <p>📍 Tawau, Sabah</p>
+                    <div class="trail-info"><span>🥾 1 km</span><span>⏱️ ~1 Hour</span></div>
+                    <button class="details-btn" data-trail="bukit-gemok">View Details</button>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Hiking Preparation</h2>
+        <div class="feature-grid">
+            <a href="checklist.html" class="feature-card feature-link"><span>🎒</span><h3>Packing Checklist</h3><p>Prepare essential hiking equipment.</p></a>
+            <a href="weather.html" class="feature-card feature-link"><span>🌦️</span><h3>Weather</h3><p>Check Tawau weather before hiking.</p></a>
+            <a href="map.html" class="feature-card feature-link"><span>🗺️</span><h3>Trail Map</h3><p>View Tawau hiking locations and routes.</p></a>
+            <a href="emergency.html" class="feature-card feature-link"><span>🚨</span><h3>Emergency</h3><p>Access safety and emergency contacts.</p></a>
+        </div>
+    </section>
+</main>
+
+<nav class="bottom-nav">
+    <a href="index.html" class="nav-item active"><span>🏠</span>Home</a>
+    <a href="trails.html" class="nav-item"><span>🥾</span>Trails</a>
+    <a href="map.html" class="nav-item"><span>🗺️</span>Map</a>
+    <a href="favourites.html" class="nav-item"><span>❤️</span>Favourite</a>
+    <a href="profile.html" class="nav-item"><span>👤</span>Profile</a>
+</nav>
+
+<script src="trail-data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

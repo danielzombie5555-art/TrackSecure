@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Favourite Trails | TrackSecure</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="topbar">
+        <div>
+            <h1>TrackSecure</h1>
+            <p>Your Saved Hiking Trails</p>
+        </div>
+
+        <a href="trails.html" class="back-btn">
+            Explore Trails
+        </a>
+    </header>
+
+    <main>
+
+        <section class="page-header favourite-header">
+            <span class="hero-label">
+                Personal Trail Collection
+            </span>
+
+            <h2>Favourite Trails</h2>
+
+            <p>
+                View and manage hiking trails that you have
+                saved for your next adventure.
+            </p>
+        </section>
+
+        <section class="favourite-summary">
+            <div>
+                <span>❤️</span>
+
+                <div>
+                    <p>Saved Trails</p>
+                    <strong id="favouriteCount">0</strong>
+                </div>
+            </div>
+
+            <button
+                type="button"
+                id="clearFavouritesBtn"
+                class="clear-favourites-btn"
+            >
+                Clear All
+            </button>
+        </section>
+
+        <section
+            class="trail-grid"
+            id="favouriteTrailList"
+        >
+        </section>
+
+        <section
+            class="empty-favourite-state"
+            id="emptyFavouriteState"
+        >
+            <span>🤍</span>
+
+            <h2>No Favourite Trails Yet</h2>
+
+            <p>
+                Save hiking trails that you are interested in
+                and they will appear here.
+            </p>
+
+            <a href="trails.html" class="explore-empty-btn">
+                Explore Hiking Trails
+            </a>
+        </section>
+
+    </main>
+
+    <nav class="bottom-nav">
+
+        <a href="index.html" class="nav-item">
+            <span>🏠</span>
+            Home
+        </a>
+
+        <a href="trails.html" class="nav-item">
+            <span>🥾</span>
+            Trails
+        </a>
+
+        <a href="map.html" class="nav-item">
+            <span>🗺️</span>
+            Map
+        </a>
+
+        <a href="favourites.html" class="nav-item active">
+            <span>❤️</span>
+            Favourite
+        </a>
+
+        <a href="profile.html" class="nav-item">
+            <span>👤</span>
+            Profile
+        </a>
+
+    </nav>
+
+    <script src="trail-data.js"></script>
+    <script src="favourites.js"></script>
+
+</body>
+</html>

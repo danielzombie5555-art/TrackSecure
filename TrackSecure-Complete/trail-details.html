@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Trail Details | TrackSecure</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="topbar">
+        <div>
+            <h1>TrackSecure</h1>
+            <p>Trail Information & Safety Guide</p>
+        </div>
+
+        <a href="trails.html" class="back-btn">
+            ← Back
+        </a>
+    </header>
+
+    <main>
+
+        <section class="details-hero" id="detailsHero">
+
+            <div class="details-overlay">
+
+                <span
+                    class="difficulty"
+                    id="trailDifficulty"
+                >
+                    Difficulty
+                </span>
+
+                <h2 id="trailName">
+                    Trail Name
+                </h2>
+
+                <p id="trailLocation">
+                    📍 Location
+                </p>
+
+            </div>
+
+        </section>
+
+        <section class="trail-stat-grid">
+
+            <div class="trail-stat-card">
+                <span>🥾</span>
+                <p>Distance</p>
+                <strong id="trailDistance">-</strong>
+            </div>
+
+            <div class="trail-stat-card">
+                <span>⏱️</span>
+                <p>Duration</p>
+                <strong id="trailDuration">-</strong>
+            </div>
+
+            <div class="trail-stat-card">
+                <span>⛰️</span>
+                <p>Elevation</p>
+                <strong id="trailElevation">-</strong>
+            </div>
+
+            <div class="trail-stat-card">
+                <span>🧭</span>
+                <p>Trail Type</p>
+                <strong id="trailType">-</strong>
+            </div>
+
+        </section>
+
+        <section class="details-layout">
+
+            <div class="details-main">
+
+                <article class="information-card">
+                    <h2>About This Trail</h2>
+
+                    <p id="trailDescription">
+                        Trail description will appear here.
+                    </p>
+                </article>
+
+                <article class="information-card">
+                    <h2>Route Information</h2>
+
+                    <div class="route-information">
+
+                        <div>
+                            <span>🚗</span>
+
+                            <div>
+                                <strong>Parking</strong>
+                                <p id="trailParking">-</p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <span>💧</span>
+
+                            <div>
+                                <strong>Water Source</strong>
+                                <p id="trailWater">-</p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <span>🚻</span>
+
+                            <div>
+                                <strong>Toilet</strong>
+                                <p id="trailToilet">-</p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <span>📄</span>
+
+                            <div>
+                                <strong>Permit</strong>
+                                <p id="trailPermit">-</p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <span>💵</span>
+
+                            <div>
+                                <strong>Entrance Fee</strong>
+                                <p id="trailFee">-</p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <span>📶</span>
+
+                            <div>
+                                <strong>Mobile Signal</strong>
+                                <p id="trailSignal">-</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </article>
+
+                <article class="information-card">
+                    <h2>Preparation Checklist</h2>
+
+                    <div id="preparationList" class="checklist-list">
+                    </div>
+                </article>
+
+                <article class="information-card">
+                    <h2>Hiking Safety Tips</h2>
+
+                    <div id="safetyTips" class="safety-list">
+                    </div>
+                </article>
+
+            </div>
+
+            <aside class="details-sidebar">
+
+                <div class="information-card">
+                    <h2>Recommended For</h2>
+
+                    <p id="recommendedFor">
+                        Loading recommendation...
+                    </p>
+                </div>
+
+                <div class="information-card warning-card">
+                    <h2>⚠️ Safety Reminder</h2>
+
+                    <p>
+                        Check the weather, inform someone about
+                        your hiking plan and avoid hiking alone.
+                    </p>
+                </div>
+
+                <button
+                    class="save-trail-btn"
+                    id="saveTrailBtn"
+                >
+                    ♡ Save to Favourite
+                </button>
+
+                <a href="map.html" class="route-btn">
+                    🗺️ View Hiking Route
+                </a>
+
+                <a href="trails.html" class="secondary-btn">
+                    Explore Other Trails
+                </a>
+
+            </aside>
+
+        </section>
+
+    </main>
+
+    <nav class="bottom-nav">
+
+        <a href="index.html" class="nav-item">
+            <span>🏠</span>
+            Home
+        </a>
+
+        <a href="trails.html" class="nav-item active">
+            <span>🥾</span>
+            Trails
+        </a>
+
+        <a href="map.html" class="nav-item">
+            <span>🗺️</span>
+            Map
+        </a>
+
+        <a href="favourites.html" class="nav-item">
+            <span>❤️</span>
+            Favourite
+        </a>
+
+        <a href="profile.html" class="nav-item">
+            <span>👤</span>
+            Profile
+        </a>
+
+    </nav>
+
+    <script src="trail-data.js"></script>
+    <script src="trail-details.js"></script>
+
+</body>
+</html>

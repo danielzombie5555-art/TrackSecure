@@ -1,0 +1,20 @@
+TrackSecure – Tawau Trail Additions
+
+Added only these three trail records to trail-data.js:
+1. Bukit Panchang – Tawau
+2. Bukit Membalua – Tawau
+3. Bukit Sin Onn – Tawau
+
+No changes were made to the existing HTML layout, CSS design, weather page, or existing trail records.
+
+Map integration:
+- map.js already reads window.TRACKSECURE_TRAILS, so the three new locations automatically appear as Leaflet markers and in the map location list.
+- trail-details.js already uses latitude/longitude to create the Google Maps route button.
+- trails.js already reads trail-data.js, so the new locations automatically appear in the Trails page and district filter.
+
+Coordinate notes:
+- Bukit Panchang: 4.25434, 117.97473 (published trailhead coordinate).
+- Bukit Membalua: 4.27260, 118.00637 (Membalua Forest Reserve reference coordinate; not a confirmed public trailhead).
+- Bukit Sin Onn: 4.25920, 117.90907 (published place coordinate).
+
+Please verify local access/permit requirements before actual hiking, especially for forest-reserve/private-land locations.

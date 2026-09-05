@@ -1,0 +1,25 @@
+TRACKSECURE - TAWAU TRAILS UPDATE
+
+Updated:
+- Homepage search bar removed.
+- Homepage Popular Tawau Trails now shows real-photo cards for Bukit Panchang, Membalua Jungle Trek, Sin Onn Hill, Table Waterfall, Bombalai Hill and Bukit Gemok.
+- Added Tawau trail entries: Lim Man Kui Quarry Hill, Sulphur Spring Trail, Mount Lucia, Mount Magdalena, Mount Maria and Tiger Hill Trail.
+- Existing Tawau entries retained: Bukit Gemok, Table Waterfall, Bombalai Hill, Bukit Panchang, Membalua Jungle Trek and Sin Onn Hill.
+- No duplicate trail IDs.
+- Map now focuses on all Tawau entries and supports difficulty filtering/search.
+- Trail Details -> View Hiking Route now opens routes.html for the selected trail.
+- Added routes.html and routes.js.
+- Route pages intentionally do NOT invent GPS tracks. Where a published route is available, a source link is provided. Bombalai Hill includes the published route-map PDF in the route page.
+
+PHOTO SOURCES USED IN HOMEPAGE
+- Bukit Panchang: MySabah.com
+- Membalua: eTawau
+- Sin Onn Hill: eTawau
+- Table Waterfall: SabahTravel
+- Bombalai Hill: Gunung Bagging
+- Bukit Gemok: Sabahnites
+
+ACCESS / SAFETY NOTE
+Some Tawau locations have current-access uncertainty or private/forestry restrictions. Sin Onn Hill, Lim Man Kui and Tiger Hill especially should be checked locally before visiting. Bukit Panchang requires current forestry/guide arrangements according to the published source. Tawau Hills Park mountain climbs require registration, permits and guides according to Sabah Parks.
+
+The app does not claim an exact GPS line for a trail unless the source supports it.
