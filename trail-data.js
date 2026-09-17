@@ -1045,6 +1045,7 @@ window.TRACKSECURE_TRAILS = [
     "difficultyLabel": "Medium",
     "distance": "Varies",
     "duration": "Varies",
+    "video": "videos/bukit-membalua.mp4",
     "elevation": "166 m (forest reserve reference)",
     "type": "Forest / Local Trail",
     "latitude": 4.2724,
